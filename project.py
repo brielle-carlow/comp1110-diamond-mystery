@@ -21,5 +21,5 @@ def display_result(is_correct, correct_suspect):
     if is_correct:
         print("Congratulations! You solved the mystery!")
     else:
-        print("Sorry! That is not the correct suspect.")
+        print("CASE UNSOLVED. Sorry! That is not the correct suspect. You accused the wrong person.")
         print("The necklace was stolen by", correct_suspect)
