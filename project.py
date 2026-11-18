@@ -13,3 +13,13 @@ def check_answer(player_choice, correct_suspect):
         return True
     else:
         return False
+
+def display_result(is_correct, correct_suspect):
+    """
+    Display whether the player solved the mystery.
+    """
+    if is_correct:
+        print("Congratulations! You solved the mystery!")
+    else:
+        print("Sorry! That is not the correct suspect.")
+        print("The necklace was stolen by", correct_suspect)
