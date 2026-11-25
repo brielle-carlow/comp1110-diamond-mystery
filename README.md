@@ -5,7 +5,7 @@
 -Brielle Carlow
 -Mehak Shabbir
 
-# Description
+## Description
 
 This is a mystery game where users solve the mystery of a stolen diamond necklace by finding out who is the thief.
 
@@ -21,3 +21,7 @@ User input:
 
 expect output:
 - Merilin is the thief, you solved the mystery.
+
+## Functions
+- create_suspects: simply creates the names, jobs, and statements of the suspects.
+- 
