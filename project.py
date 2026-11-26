@@ -47,8 +47,7 @@ def display_suspects(suspects):
 
 def victim_statement(name, statement):
     return (f"{name}'s statement is \"{statement}\"")
-print(victim_statement("Sarah", "I left my necklace on the night stand before I went shopping, and when I returned it was no longer there"))
-    
+
 #mehak
 def create_clues():
     clues = [
