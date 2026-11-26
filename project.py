@@ -28,7 +28,7 @@ def main():
     print("Welcome to The Missing Necklace!")
     print("There are three suspects. Can you figure out who stole the necklace?")
 
-    correct_suspect = "Sarah" #PLACE HOLDER FIX NAME IF ITS DIFFERENT#
+    correct_suspect = "Merilin"
 
     player_choice = get_player_choice()
 
