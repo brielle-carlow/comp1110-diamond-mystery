@@ -35,9 +35,9 @@ def main():
 #merilin
 def create_suspects():
     """Creates a list of suspects with their names, jobs, and statements."""
-    merilin = Suspect("merilin", "hotel manager", "I was in my office doing paper work")
-    brielle = Suspect("brielle", "guest", "I was relaxing by the pool")
-    mehak = Suspect("mehak", "security", "I was patrolling around the lobby")
+    merilin = Suspect("merilin", "hotel manager", "I was busy all day in my office doing paper work.")
+    brielle = Suspect("brielle", "guest", "I was relaxing by the pool while I waited for Sarah to return.")
+    mehak = Suspect("mehak", "security", "I was patrolling around the lobby, I greeted sarah on her way out and when she returned.")
     return [merilin, brielle, mehak]
 
 def display_suspects(suspects):
@@ -52,8 +52,8 @@ print(victim_statement("Sarah", "I left my necklace on the night stand before I 
 #mehak
 def create_clues():
     clues = [
-        {"description": "Clue 1: Papers disturbed in the manager's office.", "points_to": "merilin"},
-        {"description": "Clue 2: Wet footprints near the pool.", "points_to": "brielle"},
+        {"description": "Clue 1: A Hotel master-key card was used to open Sarah's room.", "points_to": "merilin"},
+        {"description": "Clue 2: Wet footprints down the hall near Sarah's room.", "points_to": "brielle"},
         {"description": "Clue 3: A security key found in the lobby.", "points_to": "mehak"},
     ]
     return clues
