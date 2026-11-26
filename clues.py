@@ -1,19 +1,19 @@
 def create_clues():
     clues = [
-        {"description": "Clue 1: A torn cleaning glove found near the bedroom door.", "points_to": "Elena"},
-        {"description": "Clue 2: Muddy footprints in the garden, but none inside the house.", "points_to": "Marcus"},
-        {"description": "Clue 3: A teacup in the living room is still warm.", "points_to": "Priya"}
+        {"description": "Clue 1: Papers disturbed in the manager's office.", "points_to": "merilin"},
+        {"description": "Clue 2: Wet footprints near the pool.", "points_to": "brielle"},
+        {"description": "Clue 3: A security key found in the lobby.", "points_to": "mehak"},
     ]
     return clues
 
 def display_clues(clues):
-    print("\n--- CLUES FOUND ---")
+    print("\n--- Clues ---")
     for clue in clues:
         print(clue["description"])
 
 def get_clues_for_suspect(clues, suspect_name):
-    result = []
+    matching = []
     for clue in clues:
         if clue["points_to"].lower() == suspect_name.lower():
-            result.append(clue["description"])
-    return result
+            matching.append(clue["description"])
+    return matching
