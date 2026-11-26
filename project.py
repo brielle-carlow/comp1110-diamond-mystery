@@ -11,8 +11,8 @@ def main():
     """
     Run the necklace mystery game.
     """
-    print("Welcome to The Missing Necklace!")
-    print("There are three suspects. Can you figure out who stole Sarah's necklace?")
+    print("Welcome to The Missing Diamond Necklace!")
+    print("There are three suspects. Can you figure out who stole Sarah's diamond necklace?")
 
     victim_statement(
         "Sarah",
