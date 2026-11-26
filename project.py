@@ -1,3 +1,12 @@
+class Suspect:
+    """
+    Represent a suspect in the mystery
+    """
+    def __init__(self, name, job, statement):
+        self.name = name
+        self.job = job
+        self.statement = statement
+    
 def main():
     """
     Run the necklace mystery game.
@@ -15,12 +24,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-#merilin work
-class Suspect:
-    def __init__(self, name, job, statement):
-        self.name = name
-        self.job = job
-        self.statement = statement
 
 def create_suspects():
     """Creates a list of suspects with their names, jobs, and statements."""
