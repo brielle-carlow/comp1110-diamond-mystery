@@ -14,6 +14,11 @@ def main():
     print("Welcome to The Missing Necklace!")
     print("There are three suspects. Can you figure out who stole Sarah's necklace?")
 
+    victim_statement(
+        "Sarah",
+        "I left my necklace on the night stand before I went shopping and when I returned it was no longer there."
+    )
+
     suspects = create_suspects()
     display_suspects(suspects)
 
@@ -27,7 +32,7 @@ def main():
     is_correct = check_answer(player_choice, correct_suspect)
 
     display_result(is_correct, correct_suspect)
-
+#merilin
 def create_suspects():
     """Creates a list of suspects with their names, jobs, and statements."""
     merilin = Suspect("merilin", "hotel manager", "I was in my office doing paper work")
@@ -39,7 +44,11 @@ def display_suspects(suspects):
     """Displays the list of suspects with their details."""
     for suspect in suspects:
         print(f"{suspect.name}, {suspect.job}, {suspect.statement}")
-
+        
+def victim_statement(name, statement):
+    print(f"{name}'s statement is \"{statement}\"")
+print(victim_statement("Sarah", "I left my necklace on the night stand before i went shopping and when I returned it was no longer there"))
+    
 #mehak
 def create_clues():
     clues = [
