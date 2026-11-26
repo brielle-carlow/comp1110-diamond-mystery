@@ -49,7 +49,7 @@ def main():
     Run the necklace mystery game.
     """
     print("Welcome to The Missing Necklace!")
-    print("There are three suspects. Can you figure out who stole the necklace?")
+    print("There are three suspects. Can you figure out who stole Sarah's necklace?")
 
     correct_suspect = "Merilin"
 
