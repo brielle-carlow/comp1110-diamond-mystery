@@ -46,7 +46,7 @@ def display_suspects(suspects):
         print(f"{suspect.name}, {suspect.job}, {suspect.statement}")
         
 def victim_statement(name, statement):
-    print(f"{name}'s statement is \"{statement}\"")
+    return(f"{name}'s statement is \"{statement}\"")
 print(victim_statement("Sarah", "I left my necklace on the night stand before i went shopping and when I returned it was no longer there"))
     
 #mehak
