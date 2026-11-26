@@ -9,10 +9,7 @@ def check_answer(player_choice, correct_suspect):
     """
     Check whether the player's chosen suspect is correct.
     """
-    if player_choice.lower() == correct_suspect.lower():
-        return True
-    else:
-        return False
+    return play_choice.strip().lower()==correct_suspect.strip().lower()
 
 def display_result(is_correct, correct_suspect):
     """
