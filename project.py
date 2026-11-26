@@ -19,24 +19,3 @@ def display_suspects(suspects):
 suspects = create_suspects()
 display_suspects(suspects)
 
-def create_clues():
-    return [
-        "Security footage shows Sarah in the living room near the safe",
-        "A neighbor confirms Mike was outside during the incident",
-        "The television was off, contradicting Alex's statement"
-    ]
-
-def display_clues(clues):
-    print("\nCLUES")
-    for i, clue in enumerate(clues, 1):
-        print(f"{i}. {clue}")
-
-def get_clues_for_suspect(clues, suspect):
-    if suspect == "Sarah":
-        return [clues[0]]
-    elif suspect == "Mike":
-        return [clues[1]]
-    elif suspect == "Alex":
-        return [clues[2]]
-    else:
-        return []
