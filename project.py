@@ -14,10 +14,10 @@ def main():
     print("Welcome to The Missing Diamond Necklace!")
     print("There are three suspects. Can you figure out who stole Sarah's diamond necklace?")
 
-    victim_statement(
+    print(victim_statement(
         "Sarah",
         "I left my necklace on the night stand before I went shopping and when I returned it was no longer there."
-    )
+    ))
 
     suspects = create_suspects()
     display_suspects(suspects)
