@@ -14,13 +14,13 @@ User input:
 - the culprit: Brielle
 
 expect output:
-- Brielle is innocent, the thief is still out there.
+- CASE UNSOLVED. Sorry! That is not the correct suspect. You accused the wrong person.
 
 User input:
 - the culprit: Merilin
 
 expect output:
-- Merilin is the thief, you solved the mystery.
+- Congratulations! You solved the mystery!
 
 ## Functions
 - create_suspects: simply creates the names, jobs, and statements of the suspects.
