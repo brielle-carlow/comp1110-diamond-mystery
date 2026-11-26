@@ -14,6 +14,12 @@ def main():
     print("Welcome to The Missing Necklace!")
     print("There are three suspects. Can you figure out who stole Sarah's necklace?")
 
+    suspects = create_suspects()
+    display_suspects(suspects)
+
+    clues = create_clues()
+    display_clues(clues)
+
     correct_suspect = "Merilin"
 
     player_choice = get_player_choice()
@@ -21,9 +27,6 @@ def main():
     is_correct = check_answer(player_choice, correct_suspect)
 
     display_result(is_correct, correct_suspect)
-
-if __name__ == "__main__":
-    main()
 
 def create_suspects():
     """Creates a list of suspects with their names, jobs, and statements."""
@@ -36,9 +39,6 @@ def display_suspects(suspects):
     """Displays the list of suspects with their details."""
     for suspect in suspects:
         print(f"{suspect.name}, {suspect.job}, {suspect.statement}")
-
-suspects = create_suspects()
-display_suspects(suspects)
 
 #mehak
 def create_clues():
@@ -73,7 +73,7 @@ def check_answer(player_choice, correct_suspect):
     """
     Check whether the player's chosen suspect is correct.
     """
-    return play_choice.strip().lower()==correct_suspect.strip().lower()
+    return player_choice.strip().lower()== correct_suspect.strip().lower()
 
 def display_result(is_correct, correct_suspect):
     """
@@ -84,3 +84,6 @@ def display_result(is_correct, correct_suspect):
     else:
         print("CASE UNSOLVED. Sorry! That is not the correct suspect. You accused the wrong person.")
         print("The necklace was stolen by", correct_suspect)
+
+if __name__ == "__main__":
+    main()
